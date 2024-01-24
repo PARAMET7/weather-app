@@ -1,0 +1,137 @@
+.good-weather-app {
+  background: linear-gradient(to bottom right, #fec43c 20%, rgb(255, 149, 0));
+  color: #fafad2;
+}
+.bad-weather-app {
+  background: linear-gradient(to bottom right, #3cc0fe 20%, #06f);
+  color: #d2e9fa;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.input__activity {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+
+.submitButton {
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 20px 0px;
+}
+.submitButton__good {
+  background-color: #f89400;
+}
+.submitButton__bad {
+  background-color: #2d34bd;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0.5rem 0.5rem;
+  gap: 1rem;
+  background-color: rgb(176, 176, 176);
+  border-radius: 10px;
+  filter: drop-shadow(1px 2px 0.2rem gray);
+}
+
+.item-text {
+  flex: 1;
+}
+
+.button__delete {
+  display: flex;
+  position: relative;
+  left: -1.3em;
+  background: #f5f5f5;
+  height: 2em;
+  border: 0.1em solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+  color: #ccc;
+  border-radius: 1.5em;
+  cursor: pointer;
+  align-items: center;
+}
+
+.weather__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.weather__temperature {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.circle-list li {
+  padding: 2.5em;
+  margin-bottom: 10px;
+}
+
+.circle-list h2 {
+  position: relative;
+  margin-left: 16px;
+}
+
+.circle-list p {
+  margin: 0;
+}
+
+.circle-list h2:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  z-index: 1;
+  left: -1.5em;
+  top: -0.8em;
+  background: #f5f5f5;
+  height: 1.5em;
+  width: 1.5em;
+  text-align: center;
+  font: italic bold 1em/1.5em Georgia, Serif;
+  color: #ccc;
+  border-radius: 1.5em;
+  transition: all 0.2s ease-out;
+}
+
+.circle-list li:hover h2:before {
+  border-color: rgba(0, 0, 0, 0.08);
+  border-width: 0.2em;
+  color: #444;
+  transform: scale(1.5);
+}
+.circle-list__bad-weather li:hover h2:before {
+  background-color: #3a47f9;
+  opacity: 70%;
+}
+.circle-list__good-weather li:hover h2:before {
+  background-color: #fa9f0c;
+}
+.container__list {
+  max-width: 400px;
+}
+.checkbox {
+  margin-left: 12px;
+}

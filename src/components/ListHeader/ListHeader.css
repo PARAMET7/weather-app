@@ -1,0 +1,117 @@
+.widget {
+  margin-top: 20px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 80px -20px rgb(0 0 0 / 50%);
+  position: relative;
+  overflow: hidden;
+}
+.pictoBackdrop {
+  position: absolute;
+  height: 560px;
+  width: 560px;
+  border-radius: 50%;
+  background: linear-gradient(
+    160deg,
+    rgba(60, 192, 254, 0.7) 40%,
+    rgba(0, 102, 255, 0.6)
+  );
+  right: -40px;
+  top: -90px;
+}
+.pictoFrame {
+  position: absolute;
+  background: #34373e;
+  border-radius: 50%;
+  box-shadow: 0px 50px 60px -20px #06f;
+  height: 336px;
+  width: 336px;
+  right: 80px;
+  top: 25px;
+}
+.pictoCloudBig {
+  position: absolute;
+  border-radius: 50%;
+  background: #aacbe6;
+  box-shadow: 20px 20px 80px -20px #aacbe6;
+  height: 218.4px;
+  width: 218.4px;
+  top: 80px;
+  right: 160px;
+}
+.pictoCloudFill {
+  position: absolute;
+  background: #aacbe6;
+  box-shadow: 0px 20px 80px -20px #aacbe6;
+  height: 107.016px;
+  width: 107.016px;
+  top: 191px;
+  right: 265px;
+}
+.pictoCloudSmall {
+  position: absolute;
+  border-radius: 50%;
+  background: #d2e9fa;
+  height: 152.88px;
+  width: 152.88px;
+  top: 146px;
+  right: 282px;
+}
+.iconCloudBig {
+  position: absolute;
+  border-radius: 50%;
+  background: #9cd0ff;
+  height: 36px;
+  width: 36px;
+  top: 200px;
+  left: 80px;
+}
+.iconCloudSmall {
+  position: absolute;
+  border-radius: 50%;
+  height: 23.4px;
+  width: 23.4px;
+  background: #d2e9fa;
+  top: 213px;
+  left: 70px;
+}
+.iconCloudFill {
+  position: absolute;
+  height: 16.38px;
+  width: 16.38px;
+  background: #9cd0ff;
+  top: 220px;
+  left: 80px;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 20px;
+  border-bottom: 2px solid #9cd0ff;
+  justify-content: center;
+}
+.temperature {
+  color: white;
+  font-weight: 300;
+  font-size: 7em;
+}
+.summary {
+  font-size: 7.5em;
+}
+.summaryText {
+  margin: 0;
+  margin-left: 56px;
+}
+.location,
+.recomendation {
+  font-size: 1.6em;
+  font-weight: 300;
+  margin-left: 8px;
+}
+.location {
+  margin: 16px 38px;
+}
+.recomendation {
+  margin: 20px 38px 22px 38px;
+}
